@@ -143,7 +143,7 @@ public class MqttService implements IMqttService {
                 instance.subscribeSigned(subscribeTopic, new String[]{publicKey}, new IUbiMessageListener() {
                     @Override
                     public void messageArrived(String topic, MqttMessage mqttMessage, String listenerId) {
-                        System.out.println("Message arrived to signed!");
+                        System.out.println("Message arrived to signed!!");
                         listener.messageArrived(mqttMessage.toString());
                     }
                 }, new IUbiActionListener() {
